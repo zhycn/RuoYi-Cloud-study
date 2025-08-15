@@ -1,0 +1,27 @@
+# 学习进度
+
+学习目标：通过这个项目了解微服务生态环境。
+
+- 2025-08-14 导入项目。
+- 2025-08-14 ruoyi-ui 基于3.6.6版本，运行正常，保持不变。
+
+```plain
+【ok】.github - 无须关注
+【ok】bin - Mac不适用
+【ok】docker - docker的一些文件，看来这项目改成Spring Cloud还挺麻烦的。
+【ok】ruoyi-api - 使用feignClient 和 熔断
+【ok】ruoyi-auth - 登录与认证
+【ok】ruoyi-common - 【数据脱敏的设计感觉很不错】
+【ok】ruoyi-gateway - 【网关这个设计还可以】
+【ok】ruoyi-modules - 保持不变（和Ruoyi-Vue大致一样，增加了ruoyi-file模块，只支持fastdfs,minio,local存储）
+【ok】ruoyi-ui - 保持不变【不是研究的重点】
+【ok】ruoyi-visual - 【Spring Boot Admin 支持】
+【ok】sql - 保持不变（在Ruoyi-Vue的基础上新增了配置表和Seata的表）
+【ok】.gitignore - 保持不变
+【ok】LICENSE - 保持不变
+【ok】pom.xml - 保持不变（无法升级到Spring Boot 3）
+【ok】README.md - 保持不变
+```
+
+该项目可能实现了一点微服务的基础功能，但技术选型还是过于国产化，而国产化最大的坑就是升级时依赖跟不上最新版本。
+典型的有PageHelper和Spring Cloud Alibaba等。
